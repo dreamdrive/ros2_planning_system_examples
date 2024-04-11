@@ -1,0 +1,29 @@
+set instance nyokkey robot
+
+set instance ini pose
+set instance fin pose
+set instance p1 pose
+set instance p2 pose
+set instance p3 pose
+set instance p4 pose
+
+set instance zero pose
+
+set instance jt1 pose
+
+set predicate (connected ini p1)
+set predicate (connected p1 p2)
+set predicate (connected p2 p3)
+set predicate (connected p3 p4)
+set predicate (connected p4 fin)
+
+set predicate (robot_at nyokkey ini)
+
+set predicate (zero_point_at zero)
+set predicate (joint_at jt1)
+
+set goal (and(robot_at nyokkey p1))
+
+set goal (and(robot_at nyokkey zero))
+
+set goal (and(robot_at nyokkey jt1))

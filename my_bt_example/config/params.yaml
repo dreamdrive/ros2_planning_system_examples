@@ -1,0 +1,13 @@
+move:
+  ros__parameters:
+    plugins:
+      - my_move_bt_node
+    joint_names: ["left_joint1", "left_joint2", "left_joint3", "left_joint4", "left_joint5", "left_joint6", "left_joint7"]
+    waypoints: ["ini", "p1", "p2", "p3", "p4", "fin"]
+    waypoint_joints:
+      ini: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      p1: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      p2: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      p3: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      p4: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+      fin: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
